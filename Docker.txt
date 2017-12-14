@@ -1,0 +1,42 @@
+Images:
+
+To run an image: docker run hello-world 
+To run centos on top of your existing os: docker run -t -i centos /bin/bash
+Display all image: docker images
+removing docker image : docker rmi ImageID
+To see the details about docker image or container: docker inspect Image/Container
+
+ Container:
+ List currently running containers: docker ps
+ List all the containers: docker ps -a
+ History of an image: docker history ImageID
+ To see top processes within container: docker top ContainerID 
+ Stopping a container: docker stop ContainerID 
+ Remove a container : docker rm ContainerID
+ Statastics of the container: docker stats ContainerID 
+ Attaching with existing running container: docker attach ContainerID 
+ Pausing a container : docker pause ContainerID
+ Unpausing a container: docker unpause ContainerID
+ Killing a container : docker kill ContainerID
+ 
+ 
+ Creating own docker images:
+ Create image: create Dockerfile
+ Build the docker file: docker build -t ImageName:TagName dir
+ 
+ 
+ Pulling/Pushing image:
+ docker pull imageName
+ docker push RepositoryName
+  
+  
+ Opening a port for access:
+ sudo docker run -p 8080:8080 -p 50000:50000 jenkins 
+ 
+ 
+ Docker compose:
+ To run multiple containers as a single service
+ docker-compose up
+ 
+ remove all containers:
+ docker rm $(docker ps -aq)

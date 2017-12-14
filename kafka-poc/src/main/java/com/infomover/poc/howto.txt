@@ -1,0 +1,7 @@
+bin/zookeeper-server-start.sh config/zookeeper.properties
+bin/kafka-server-start.sh config/server.properties
+bin/kafka-server-start.sh config/server-1.properties
+bin/kafka-topics.sh --zookeeper localhost:2181 --replication-factor 2 --partitions 3 --create --topic sometopic
+bin/kafka-topics.sh --zookeeper localhost:2181 --list
+
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9093 --topic sometopic --from-beginning

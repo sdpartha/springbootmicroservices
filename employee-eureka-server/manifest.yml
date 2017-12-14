@@ -1,0 +1,5 @@
+applications:
+- name: cf-spring-eureka-server5444
+  memory: 768M
+  instances: 1
+  random-route: false

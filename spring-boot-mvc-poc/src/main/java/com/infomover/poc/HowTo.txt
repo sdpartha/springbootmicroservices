@@ -1,0 +1,12 @@
+/Users/jaydatt/software/apache-tomcat-8.5.23/bin
+chmod +x catalina.sh
+
+
+<role rolename="manager-gui"/>
+<user username="tomcat" password="s3cret" roles="manager-gui"/>
+in conf/tomcat-users.xml
+
+
+
+#increase file upload size:  vi webapps/manager/WEB-INF/web.xml 
+sh startup.sh

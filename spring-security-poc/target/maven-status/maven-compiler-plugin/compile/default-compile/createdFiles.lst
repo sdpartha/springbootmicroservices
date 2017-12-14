@@ -1,0 +1,11 @@
+com/infomover/security/poc/controller/SampleController.class
+com/infomover/security/poc/repository/UserRepository.class
+com/infomover/security/poc/service/UserService.class
+com/infomover/security/poc/service/UserServiceImpl.class
+com/infomover/security/poc/service/UserDetailsServiceImpl.class
+com/infomover/security/poc/config/WebSecurityConfig.class
+com/infomover/security/poc/SpringSecurityPocApplication.class
+com/infomover/security/poc/entity/User.class
+com/infomover/security/poc/config/MvcConfig.class
+com/infomover/security/poc/entity/Role.class
+com/infomover/security/poc/repository/RoleRepository.class
